@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifetime Learning</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo1.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+    <!-- header section  -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="logo1.png" data-aos="fade-in"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li data-aos="fade-left" data-aos="fade-left"><a href="index.html">Home</a></li>
+                    <li data-aos="fade-left"><a href="about.html">About</a></li>
+                    <li data-aos="fade-left"><a href="course.html">Course</a></li>
+                    <li data-aos="fade-left"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1 data-aos="fade-in">About Us</h1>
+        
+    </section>
+
+
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1 data-aos="fade-left">Our<span>Vision</span> </h1>
+                <p data-aos="fade-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aspernatur ipsam consequatur tempore officiis expedita libero reprehenderit. Maxime beatae quae error hic reprehenderit accusamus enim officiis aperiam, dignissimos sapiente pariatur praesentium nulla provident suscipit!
+                </p>
+                <a href="">Explore Now</a>
+            </div>
+            <div class="about-col">
+                <img src="about.jpg" data-aos="fade-right">
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+        <h4>About us</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum itaque maiores tempore exercitationem tenetur <br> suscipit. Facere earum maiores voluptas eveniet.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart"></i> by Nitin</p>
+    </section>
+
+    <script src="https://kit.fontawesome.com/e81701fc3a.js" crossorigin="anonymous"></script>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+    <!-- our aos data -->
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+       AOS.init({
+        offset: 200,
+        duration: 1000,
+       });
+     </script>
+</body>
+</html>
